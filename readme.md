@@ -19,22 +19,11 @@ tag on the page.
     <title>Document</title>
 </head>
 <body>
-<style>
-      ldnpk-blocktitle {
-          --gradientFrom: var(--color-emerald-300);
-          --gradientTo:   var(--color-emerald-500);
-          --highlighted:  var(--color-emerald-50);
-      } 
-        
-    </style>
 
-    <ldnpk-blocktitle highlighted="Title">
-        <div slot="title">The Title with highlight.</div>
-
-        <div slot="subheading">Subheading.</div>
-
-        <div slot="paragraph">With well over a decade of full-time international parkour and movement coaching, our coaches are among the most accomplished in the world. Instructing all levels of ability, professions and demographics, we’re certain we can help you too.</div>
-    </ldnpk-blocktitle>
+    <ldnpk-blocksubtitle>
+        <div slot="title">Title</div>
+        <div slot="subheading">subtitle</div>
+    </ldnpk-blocksubtitle>
 
     <script src="./blockTitle.js"></script>
 
@@ -44,15 +33,5 @@ tag on the page.
 
 ## Storybook
 
-You can use the `blockTitle.stories.js` file in storybook.js to dynamically describe 
+You can use the `blockSubTitle.stories.js` file in storybook.js to dynamically describe 
 the webcomponent.
-
-## Properties
-
-- `highlighted`
-
-## CSS Properties
-
-- `--gradientFrom`
-- `--gradientTo`
-- `--highlighted`
